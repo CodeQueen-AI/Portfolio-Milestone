@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.home {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    align-items: center;
+    grid-gap: 4em;
+    margin-top: -60px;
+    padding: 60px 10%;
+}
+
+.main-heading {
+    font-size: 2.5rem;
+    color: #ff69b4; 
+    margin-bottom: 10px;
+}
+
+.name-heading {
+    font-size: 2.5rem;
+    color: blue;
+    margin-bottom: 15px;
+}
+
+/* About Me paragraph */
+.about-me {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.img-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    left: 50px;
+    top: -20px;
+}
+.img-box {
+    height: 300px;
+    width: 300px;
+    background-image: url('/Home Pic.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    transition: filter 0.3s ease;
+}
+.btn-home {
+    background-color: #ff69b4;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 15px 40px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 80px;
+    color: white;
+}
+.btn-home:hover {
+    transform: translateY(-5px);
+    background-color: #ff1493;
+    transition: background-color 0.3s ease;
+}
+@media (max-width: 768px) {
+    .home {
+        grid-template-columns: 1fr; 
+        padding: 40px 5%;
+        margin-top: 0;
+    }
+
+    .main-heading,
+    .name-heading {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .about-me {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .btn-home {
+        margin: 10px auto;
+        font-size: 18px;
+        padding: 12px 30px;
+    }
+    .img-container {
+        left: 0;
+        top: -50px;  
+        margin: 0 auto;
+    }
+
+    .img-box {
+        height: 250px;
+        width: 250px;
+    }
+}
+@media (max-width: 480px) {
+    .home {
+        padding: 20px 3%;
+    }
+
+    .main-heading,
+    .name-heading {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .about-me {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .btn-home {
+        font-size: 16px;
+        padding: 10px 25px;
+        margin: 10px auto;
+    }
+    .img-container {
+        left: 0;
+        top: -30px;  
+        margin: 0 auto;
+    }
+
+    .img-box {
+        height: 200px;
+        width: 200px;
+    }
+}

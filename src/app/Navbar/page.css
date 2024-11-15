@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Pacifico&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Libre Baskerville', serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a, span {
+  text-decoration: none;
+}
+
+.logo {
+  height: 20px;
+  font-family: 'Pacifico', cursive;
+  color: blue;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: darkblue;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: #f7c8d6;
+  box-shadow: 2px 2px 20px rgba(90, 118, 253, 0.13), 0 4px 8px rgba(0, 0, 255, 0.3);
+  z-index: 1;
+  width: 100%;
+  font-size: 20px;
+}
+
+.menu {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu li span {
+  height: 40px;
+  line-height: 43px;
+  margin: 8px;
+  padding: 0px 22px;
+  display: flex;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #111;
+  letter-spacing: 1px;
+}
+
+.menu li span:hover {
+  background-color: #81c3f1;
+  color: white;
+  box-shadow: 5px 10px 30px rgba(90, 118, 253, 0.5);
+  transition: all ease 0.2s;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .menu {
+    flex-direction: column; 
+    display: none; 
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #f7c8d6;
+  }
+
+  .menu.open {
+    display: flex; 
+  }
+
+  .menu li span {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

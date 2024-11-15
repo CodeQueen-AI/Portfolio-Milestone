@@ -1,0 +1,99 @@
+#skill {
+  padding: 4rem 1rem;
+  background-color: #f7fafc;
+}
+
+.skill {
+  width: 92%;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #f472b6;
+  border-radius: 1rem;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.skill h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3b82f6;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 640px) {
+  .grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.skill-box:hover {
+  box-shadow: 0 10px 20px rgba(26, 99, 216, 0.2); 
+}
+
+.skill-box img {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+}
+
+.skill-box h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #3b82f6;
+  padding: 0 1rem;
+}
+
+.skill-box span {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #ec4899;
+}
+@media (max-width: 480px) {
+  .skill h1 {
+      font-size: 1.5rem;
+  }
+
+  .skill-box img {
+      width: 4rem;
+      height: 4rem;
+  }
+
+  .skill-box h3 {
+      font-size: 1rem;
+  }
+
+  .skill-box span {
+      font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .skill {
+      width: 95%;
+  }
+}
