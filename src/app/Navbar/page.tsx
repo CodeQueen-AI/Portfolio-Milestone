@@ -22,10 +22,10 @@ const Navbar = () => {
 
       <ul className={`menu ${menuOpen ? 'open' : ''}`}>
         <li><Link href="/"><span>HOME</span></Link></li>
-        <li><Link href="/contact"><span>ABOUT</span></Link></li>
-        <li><Link href="/account"><span>SKILLS</span></Link></li>
-        <li><Link href="/plan"><span>PORTFOLIO</span></Link></li>
-        <li><Link href="/payment"><span>CONTACT</span></Link></li>
+        <li><Link href="/About"><span>ABOUT</span></Link></li>
+        <li><Link href="/Skills"><span>SKILLS</span></Link></li>
+        <li><Link href="/Projects"><span>PORTFOLIO</span></Link></li>
+        <li><Link href="/Contact"><span>CONTACT</span></Link></li>
       </ul>
     </nav>
   );
